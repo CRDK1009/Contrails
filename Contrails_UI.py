@@ -16,7 +16,7 @@ with col1:
     st.write(' ')
 
 with col2:
-    st.image("contrail.png")
+    st.image("contrail.png,width=30")
 
 with col3:
     st.write(' ')
