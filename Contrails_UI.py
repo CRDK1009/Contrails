@@ -42,7 +42,7 @@ if st.sidebar.button('Predict'):
     Minsk_pres=pd.read_csv('Minsk_pres.csv')
     Berlin_pres=pd.read_csv('Berlin_pres.csv')
     Colgne_pres=pd.read_csv('Colgne_pres.csv')
-    Lux_pres=pd.read_csv('Lux_pres.csv')
+    Lux_pres=pd.read_csv('lux_pres.csv')
     Reims_pres=pd.read_csv('reims_pres.csv')
     Paris_pres=pd.read_csv('Paris_pres.csv')
     Moscow_temp=Moscow_temp.drop(['time'],axis=1)
