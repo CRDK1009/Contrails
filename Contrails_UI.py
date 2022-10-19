@@ -182,7 +182,7 @@ if st.sidebar.button('Predict'):
                     name='Cologne',marker=dict(size=15))) 
     fig_bol.add_trace(go.Scatter(x=Lux_temp_final['temp'], y=Lux_pres_final['temp'],
                     mode='markers',
-                    name='Luxumbourg',marker=dict(size=15))) 
+                    name='Luxembourg',marker=dict(size=15))) 
     fig_bol.add_trace(go.Scatter(x=Reims_temp_final['temp'], y=Reims_pres_final['temp'],
                     mode='markers',
                     name='Reims',marker=dict(size=15))) 
