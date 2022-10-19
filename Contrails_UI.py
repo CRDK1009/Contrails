@@ -33,9 +33,9 @@ Minsk_hour=st.sidebar.selectbox('Hour at Minsk',range(1,24))
 Berlin_alt=st.sidebar.number_input('Berlin')
 Berlin_hour=st.sidebar.selectbox('Hour at Berlin',range(1,24))
 Colgne_alt=st.sidebar.number_input('Colgne')
-Colgne_hour=st.sidebar.selectbox('Hour at Colgne',range(1,24))
-Lux_alt=st.sidebar.number_input('Lux')
-Lux_hour=st.sidebar.selectbox('Hour at Lux',range(1,24))
+Colgne_hour=st.sidebar.selectbox('Hour at Cologne',range(1,24))
+Lux_alt=st.sidebar.number_input('Luxembourg')
+Lux_hour=st.sidebar.selectbox('Hour at Luxembourg',range(1,24))
 Reims_alt=st.sidebar.number_input('Reims')
 Reims_hour=st.sidebar.selectbox('Hour at Reims',range(1,24))
 Paris_alt=st.sidebar.number_input('Paris')
@@ -170,25 +170,25 @@ if st.sidebar.button('Predict'):
                     name='RH (percent) 100'))
     fig_bol.add_trace(go.Scatter(x=Moscow_temp_final['temp'], y=Moscow_pres_final['temp'],
                     mode='markers',
-                    name='Moscow_Contrail',marker=dict(size=15))) 
+                    name='Moscow',marker=dict(size=15))) 
     fig_bol.add_trace(go.Scatter(x=Minsk_temp_final['temp'], y=Minsk_pres_final['temp'],
                     mode='markers',
-                    name='Minsk_Contrail',marker=dict(size=15))) 
+                    name='Minsk',marker=dict(size=15))) 
     fig_bol.add_trace(go.Scatter(x=Berlin_temp_final['temp'], y=Berlin_pres_final['temp'],
                     mode='markers',
-                    name='Berlin_Contrail',marker=dict(size=15))) 
+                    name='Berlin',marker=dict(size=15))) 
     fig_bol.add_trace(go.Scatter(x=Colgne_temp_final['temp'], y=Colgne_pres_final['temp'],
                     mode='markers',
-                    name='Cologne_Contrail',marker=dict(size=15))) 
+                    name='Cologne',marker=dict(size=15))) 
     fig_bol.add_trace(go.Scatter(x=Lux_temp_final['temp'], y=Lux_pres_final['temp'],
                     mode='markers',
-                    name='Luxumbourg_Contrail',marker=dict(size=15))) 
+                    name='Luxumbourg',marker=dict(size=15))) 
     fig_bol.add_trace(go.Scatter(x=Reims_temp_final['temp'], y=Reims_pres_final['temp'],
                     mode='markers',
-                    name='Reims_Contrail',marker=dict(size=15))) 
+                    name='Reims',marker=dict(size=15))) 
     fig_bol.add_trace(go.Scatter(x=Paris_temp_final['temp'], y=Paris_pres_final['temp'],
                     mode='markers',
-                    name='Paris_Contrail',marker=dict(size=15))) 
+                    name='Paris',marker=dict(size=15))) 
     fig_bol.update_xaxes(title_text = "Temperature(*C)",title_font = {"size": 20},title_standoff = 25)
     fig_bol.update_yaxes(title_text = "Pressure(hPa)",title_font = {"size": 20},title_standoff = 25)
     fig_bol.update_layout(height=500,width=1500,yaxis_range=[1000,0])
